@@ -29,7 +29,7 @@ namespace FlightControl.Logic
         {
             _repository = repository;
 
-            FindLastForDepLeg();
+            FindLastForDepLeg();         //fix problem with the 2 calls to the db at the same time.
         }
 
         //public LegsLogic(DataContext data)
@@ -379,7 +379,7 @@ namespace FlightControl.Logic
 
 
 
-        private async Task FindLastForDepLeg()
+        private async void FindLastForDepLeg()
         {
             var legs = await _repository.GetLegsAsync();
             foreach(Leg leg in legs)
