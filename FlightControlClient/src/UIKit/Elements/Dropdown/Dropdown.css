@@ -1,0 +1,42 @@
+.Dropdown {
+    background-color: red;
+    min-width: 150px;
+    position: relative;
+    color: #333;
+}
+
+.Dropdown>.header {
+    padding: 7px 10px;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+}
+
+.Dropdown>.header:hover,
+.Dropdown>.list>div:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.Dropdown>.header:active,
+.Dropdown>.list>div:active {
+    background-color: #d1d1d1;
+}
+
+
+.Dropdown>.list {
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Dropdown>.list>div {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.Dropdown>.list>div.selected {
+    background-color: #e1e1e1;
+}

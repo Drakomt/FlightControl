@@ -1,0 +1,11 @@
+.Box {
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.Box > .content {
+    background-color: #e2e2e2;
+    padding: 10px;
+}
+
